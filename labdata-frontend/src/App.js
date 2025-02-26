@@ -75,6 +75,10 @@ function App() {
 
   const chartOptions = {
     responsive: true,
+    interaction: {
+      mode: 'index', // Zeigt Werte für alle Linien an einem Timestamp an
+      intersect: false, // Tooltip bleibt erhalten, auch wenn man nicht direkt auf einer Linie ist
+    },
     plugins: {
       legend: { position: 'top' },
       title: { display: true, text: 'Lab Data Graph' },
